@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Amazing Store</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="logo"><a href="/" class="text-white">Amazing Store</a></h1>
+        <nav>
+            <div><i class="fa fa-map-marker"></i> My City: <span class="text-purple _city" id="city">Gurgaon</span>
+            </div>
+            <form action="" method="POST" autocomplete="on" class="search-bar">
+                <section>
+                    <div class="control search-wrapper">
+                        <div class="combo-box">
+                            <i class="fa fa-search  first" class="search-icon"></i><input
+                                placeholder="Search products by SKU or name" type="text" class="last search-input" />
+                        </div>
+                    </div>
+                    <div class="control cart-wrapper">
+                        <div class="combo-box">
+                            <button class="button first view-cart" type="button"><i class="fa fa-shopping-cart"></i> MY
+                                CART</button>
+                            <span id="counter" class="last view-cart">0</span>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <!-- Sidebar-->
+        <aside class="sidebar">
+            <section class="categories">
+                <ul class="category">
+                    <li class="category-title title"><small class="text-light-gray">All Categories</small></li>
+                    <li class="category-title">FACE</li>
+                    <ul>
+                        <li><a class="active" href="">Creams & Gels</a></li>
+                        <li><a href="">Patches</a></li>
+                        <li><a href="">Emulsions</a></li>
+                        <li><a href="">Toners</a></li>
+                        <li><a href="">Face Cleansing</a></li>
+                        <li><a href="">Makeup Removal</a></li>
+                        <li><a href="">Scrubs</a></li>
+                        <li><a href="">Peeling</a></li>
+                        <li><a href="">Masks</a></li>
+                        <li><a href="">FACE</a></li>
+                    </ul>
+                    <li class="category-title">Body</li>
+                    <li class="category-title">Foot</li>
+                    <li class="category-title">hands</li>
+                    <li class="category-title">hair</li>
+                    <li class="category-title">makeup</li>
+                </ul>
+
+            </section>
+            <section class="offers">
+                <div class="offer">
+                    <div class="offer-title">TODAY'S OFFER</div>
+                    <div class="offer-description">Nooni Sprout Smoothing Toner</div>
+                    <hr>
+                    <div class="offer-discount">30% OFF</div>
+                </div>
+            </section>
+        </aside>
+        <!-- Main Content-->
+        <section class="content">
+            <div class="content-head">
+                <h2 class="content-title">Creams & Gels</h2>
+                <div class="content-pagination text-gray">Showing 60 of 392 <button><i
+                            class="fa fa-chevron-left"></i></button><button><i class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="content-details" id="content-details">
+            </div>
+
+        </section>
+    </main>
+    <!-- Modal HTML Begins-->
+    <div id="modal" class="hide">
+        <div id="modal-wrapper">
+            <a class="modal-close" id="modal-close">X</a>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
